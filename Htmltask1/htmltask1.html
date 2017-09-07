@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title></title>
+</head>
+<body>
+<h2>Список покупок</h2>
+<ul>
+<li type="square">Батон</li>
+<li type="circle">Молоко</li>
+<li type="square">Продукты на салат
+				<ol start="2">
+				<li>помидоры</li>
+				<li>огурцы</li>
+				<li>заправка<ul>
+							<li type="a">масло</li>
+							<li type="A">уксус</li>
+							<li type="a">соль</li>
+						   </ul>  </ol>
+
+<li type="square">Колбаса</li>
+</ul>
+<h2>График дежурств по дням</h2>
+<table rules="all" border="1"  width="30%" heigth="100%" cellspacing="0" cellpadding="5" >
+		<tr>
+		<td colspan="4" rowspan="2" align="center">Имя/смена</td><td colspan="9" align="center">День недели</td>			
+		</tr>
+		<tr>
+		<td>ПН</td><td>ВТ</td><td>СР</td><td>ЧТ</td><td>ПТ</td><td>СБ</td><td colspan="3" align="center">ВС</td>			
+		</tr>
+		<tr>
+		<td colspan="2" align="center" >Иван</td><td colspan="2" align="center">ночь</td><td>x</td><td>x</td><td>x</td><td></td><td></td><td></td><td colspan="3" rowspan="4" align="center">Закрыто</td>
+		</tr>
+		<tr>
+		<td colspan="2" align="center">Иван</td><td colspan="2" align="center">день</td><td></td><td></td><td>x</td><td>x</td><td>x</td><td></td>			
+		</tr>
+		<tr>
+		<td colspan="2" align="center">Олег</td><td colspan="2" align="center">ночь</td><td></td><td></td><td></td><td>x</td><td>x</td><td>x</td>	
+		</tr>
+		<tr>
+		<td colspan="2" align="center">Олег</td><td colspan="2" align="center">день</td><td>x</td><td>x</td><td></td><td></td><td></td><td>x</td>	
+		</tr>
+</table>
+<h2>Форма регистрации</h2>
+<form  id="task1" method="post" action="https://www.google.com/a"> </form>
+<label>Имя:<input type="text" name="firstname"  form="task1" ></label><br />
+<label>Пароль:<input type="password" name="password" form="task1"></label><br />
+<label>Пол: М<input type="radio" name="sex" value="male" form="task1"/></label>
+<label>Ж<input type="radio" name="sex" value="female" form="task1" ></label><br />
+<label>Месяц рождения:	<select size="1" name="month" required="1" form="task1"> 
+                                <option>Январь</option>
+								<option>Февраль</option>
+                                <option>Март</option>
+								<option>Апрель</option>
+								<option>Май</option>
+								<option>Июнь</option>
+								<option>Июль</option>
+								<option>Август</option>
+								<option>Сентябрь</option>
+								<option>Октябрь</option>
+								<option>Ноябрь</option>
+								<option>Декабрь</option>
+                                                       </select> </label><br />
+<label>Старше 18:<input type="checkbox" name="Are you 18?" form="task1" ></label><br />
+<label>Фото:<input type="file" name="foto"form="task1" ></label><br />
+	<input type="submit" form="task1">
+	<input type="reset" form="task1" ><br />
+	<input type="hidden" name="ssesid" value="hello" form="task1">
+<h2>Введение в Html</h2>	
+<p1>Опубликовано 31.08.2017</p1><br />
+<h3>Содержание</h3>
+<ul>
+	<li><a href="https://ru.wikipedia.org/wiki/HTML" target="_blank">Что такое HTML?</a></li>
+	<li><a href="https://htmlacademy.ru/courses/26/run/2" target="_blank">Простейшая HTML-страница</a></li>
+</ul>
+<h3>Что такое HTML-страница</h3>
+<p ><u alt="Html" title="стандартизированный язык разметки">HTML</u>-язык гипертекстовой разметки для создания страниц в сети Internet</p>
+<h3>Простейшая HTML-страница</h3>
+<p>Код простейшей HTML-страницы выглядит следующим образом:</p>
+<p>&lt!DOCTYPE html&gt<br />
+&lthtml&gt<br />
+   &nbsp;&lthead&gt<br />
+	&nbsp;&nbsp;&nbsp;&lttitle&gtЯ первая страничка&lt/title&gt<br />
+   &ltbody&gt<br />
+&nbsp;&nbsp;&nbsp;&ltp&gtПривет,мир!&lt/p&gt<br />
+&lt/body&gt<br />
+&lt/html&gt</p>
+</body>
+</html>
