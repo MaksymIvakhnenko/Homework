@@ -21,9 +21,9 @@ $arr=explode(' ',$str3);
 $arr1=array_filter ($arr);
 foreach ($arr1 as &$value){
     $value= strlen($value);
-    $max=max($arr1);
-    $min=min($arr1);
 }
+$max=max($arr1);
+$min=min($arr1);
 echo'Длинна самого длинного слово ', $max,'<br>','Длинна самого короткого слова ',$min.PHP_EOL;
 
 echo '<h2>TASK 4</h2>'.PHP_EOL;
@@ -75,11 +75,14 @@ $up=preg_replace('/[^A-Z]/','',$str10);
 
 $low=preg_replace('/[^a-z]/','',$str10);
 
-if(strlen($up)>=strlen($low)){
+if(strlen($up)>strlen($low)){
     echo strtoupper($str10).PHP_EOL;
 }
-else {
+elseif (strlen($up)<strlen($low)){
     echo strtolower($str10).PHP_EOL;
+}
+else{
+    echo $str10.PHP_EOL;
 }
 
 echo '<h2>TASK 11</h2>'.PHP_EOL;
@@ -92,20 +95,27 @@ if ($i == $str11) {
 
 echo '<h2>TASK 12</h2>'.PHP_EOL;
 //12
-$str12='.neB giB dellac netfo si nodnoL ni retsnimtseW fo ecalaP eht fo rewot eht no kcolc gib ehT';
-print_r($str12=strrev($str12));
+$str12='tset ti ro eid';
+$arr12=explode(' ',$str12);
+foreach ($arr12 as &$value){
+    $value =strrev($value);
+}
+print_r(implode(' ',$arr12));
 
 echo '<h2>TASK 13</h2>'.PHP_EOL;
 //13
-$str13='The big clock on the tower of the Palace of Westminster in London is often called Big Ben.';
+$str13='The big clock on the tower of the Palace of Westminster in London is often called Big Benaaaaaaaaaaaaaaaaaaaa.';
 $vowel=preg_replace('/[^a, i, u, e, o, y]/i','',$str13);
 $consonant=preg_replace('/[^q, w, r, t, p, s, d, f, g, h, j, k, l, z, x, c, v, b, n, m]/i','',$str13);
 
-if(strlen($consonant)<=strlen($vowel)){
+if(strlen($consonant)<strlen($vowel)){
     echo '<h5>Больше гласных</h5>'.PHP_EOL;
 }
-else{
+elseif (strlen($consonant)>strlen($vowel)){
     echo '<h5>Больше согласных</h5>'.PHP_EOL;
+}
+else {
+    echo '<h5>Одинакого</h5>'.PHP_EOL;
 }
 echo strlen($consonant),'-Количесвто согласных'.PHP_EOL;
 echo strlen($vowel),'-Количество гласны'.PHP_EOL;
@@ -139,18 +149,6 @@ foreach ($arr14 as &$value){
     echo $value .PHP_EOL;
 }
 print_r(array_count_values($arr14=preg_replace("[ий|ая|а$]i",'',$arr14)));
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
