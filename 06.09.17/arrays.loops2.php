@@ -115,7 +115,7 @@ elseif (strlen($consonant)>strlen($vowel)){
     echo '<h5>Больше согласных</h5>'.PHP_EOL;
 }
 else {
-    echo '<h5>Одинакого</h5>'.PHP_EOL;
+    echo '<h5>Одинаково</h5>'.PHP_EOL;
 }
 echo strlen($consonant),'-Количесвто согласных'.PHP_EOL;
 echo strlen($vowel),'-Количество гласны'.PHP_EOL;
