@@ -1,0 +1,112 @@
+BODY {
+background:url(../images/pattern.png)  #048505 ;
+width: 800px;
+font-family: Verdana,sans-serif;
+}
+HEADER {
+margin-bottom: 4px;	
+color: #fff;
+border: 2px solid #fff;
+background-color: #013201;
+border-radius: 10px;
+color: #fff;
+margin: 0 0 28px 0;
+text-align: center;
+}
+MAIN {
+border-radius: 10px 10px 0 0;
+background-color: #fff;
+}
+h1,h2,h3{
+	text-align: center;
+
+}
+h1{
+	margin-top: 0px;
+	font-weight: 300;
+}
+.headerp{
+	margin-bottom: 3px;
+	font-size: medium;
+}
+blockquote{
+	text-align: right;
+	font-size: small;
+}
+blockquote::after,blockquote::before{
+	content: '"';
+}
+.color1{
+	color: #3249bb;
+}
+.color2{
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+}
+.color3{
+	background-color: #89ff8a;
+	text-align: justify;
+}
+.letter_s{
+	letter-spacing: 1.4pt;
+}
+.bold{
+	font-weight:  bold;
+}
+.line_h{
+	line-height: 2;
+}
+.circleleft , .circleright 
+{
+font-family: Verdana,sans-serif;	
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+color: blue;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+background-color: #89ff8a;
+border: 4px solid  #048505;
+box-sizing: border-box;
+}
+.circleleft 
+{
+float: left;
+}
+.circleright 
+{	
+float: right;
+}
+.circleleft img{
+display: block;
+width: 100%;
+border-radius: 50%;
+
+}
+.circleright img
+{
+display: block;
+width: 100%;
+border-radius: 50%;
+
+}
+.managername{
+	font-weight: bold;
+	font-size: large;
+}
+.wrapper
+{
+width: 405px;
+height: 220px;
+}
+FOOTER{
+background-color: #013201;
+border-top: 5px dotted red;
+border-radius: 0 0 10px 10px;
+}
+.footer1{
+color: #fff;
+letter-spacing: 0.2em;
+}
