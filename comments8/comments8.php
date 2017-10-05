@@ -126,7 +126,7 @@ $comments = array_slice($comments,(($currentPage-1)*$commentsPerPage),$commentsP
                 endforeach;
                 // Вывод ссылок постраничной навигации
                 ?>
-                <div class="pagination btn-group">
+                <div class="pagination btn">
                     <h3><span class="label label-warning">Текущая страница:<?=$currentPage?></span></h3>
                     <?php echo ' '.' <a href="?p='.($currentPage==1).'" class="btn btn-success"><<Начало</a>'; ?>
                     <?php echo ' '.' <a href="?p='.($currentPage-1).'" class="btn btn-danger"><Назад</a>'; ?>
